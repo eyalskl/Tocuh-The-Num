@@ -106,6 +106,7 @@ td {
     transition: .5s;
     border: 3px solid black;
     border-radius: 10%;
+    cursor: pointer;
 }
 
 .table td:hover {
