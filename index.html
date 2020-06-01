@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch The Num</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/f4b51a9e99.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="init()">
+    <h1 onclick="showInstructions()" title="Click for game Instructions"> Touch The Number <i class="fas fa-exclamation"></i></h1>
+    <p hidden><span>Instructions:</span><br>
+        In order to win you have to touch the numbers<br>
+        from 1 to the maximum in the shortest time! <br> <br> 
+        accoring to the difficulty level: <br>
+            Easy Mode - 16 Numbers. <br>
+            Medium Mode - 25 Numbers. <br>
+            Hard Mode - 36 Numbers. <br>
+            Enjoy!
+    </p>
+
+    <div class="timer">
+        <div class="game-time">
+            <i class="fas fa-hourglass-start"></i>
+            Game Time
+            <i class="fas fa-hourglass-start"></i>
+        </div>
+        <span></span>
+    </div>
+    <br>
+<hr class="style-seven">
+    <button class="easy mode" onclick="setMode(this)">easy</button>
+    <button onclick="setMode(this)" class="medium">medium</button>
+    <button onclick="setMode(this)" class="hard">hard</button>
+    <table cellpadding="10">
+        <tbody class="table">
+
+        </tbody>
+    </table>
+
+
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
